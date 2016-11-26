@@ -1,0 +1,53 @@
+{
+  "name": "hackkings_oversee",
+  "version": "1.0.0",
+  "description": "A shared calendar for friends",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run -s build-node && npm run -s build-react",
+    "start": "node dist/index.js",
+    "build-node": "babel src -s -D -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbraaoMota/hackkings_oversee.git"
+  },
+  "author": "Abraao Mota & Diogo Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbraaoMota/hackkings_oversee/issues"
+  },
+  "homepage": "https://github.com/AbraaoMota/hackkings_oversee#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "google-map-react": "^0.21.5",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "request": "^2.78.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "css-loader": "^0.26.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.2.0",
+    "postcss-loader": "^1.1.1",
+    "style-loader": "^0.13.1"
+  }
+}
