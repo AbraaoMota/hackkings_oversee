@@ -4,7 +4,7 @@
   "description": "A shared calendar for friends",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node src/index.js",
     "build-node": "babel src -s -D -d dist"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "google-map-react": "^0.21.5",
+    "mongodb": "^2.2.11",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "request": "^2.78.0"
