@@ -1,9 +1,12 @@
-<html>
-	<h1> Welcome {{username}}! </h1>
+{% extends "base.html" %}
 
-	<h4> Click below to create a channel</h4>
+{% block content %}
+  <h1> Welcome {{username}}! </h1>
 
-	<form method="get">
-		<input type="submit" value="Create a new channel" name="new_channel" id="new_channel" class="btn btn-success"/>
-	</form>
-</html>
+  <h4> Click below to create a channel</h4>
+
+  <form method="get">
+    <input type="submit" value="Create a new channel" name="new_channel" id="new_channel" class="btn btn-success"/>
+  </form>
+
+{% endblock %}
